@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jdK-hR-BOQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="bnV-NS-Xif">
+            <objects>
+                <viewController id="Cyb-MI-Tzd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S6D-m0-ZB9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This app is created by Randhir Kumar for evaluation purpose.App uses different API's of stackoverflow to display data." lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iNv-wC-3bo">
+                                <rect key="frame" x="4" y="94" width="309" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="34.png" id="EyA-9g-eBm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRK-jP-yhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7676" y="-2347"/>
+        </scene>
+        <!--Tag-->
+        <scene sceneID="wz7-Zb-THF">
+            <objects>
+                <viewController storyboardIdentifier="IntroScreenStryBrdID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="baw-rS-R37" customClass="STOIntroPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bOU-hl-wXh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W9x-oE-79Z">
+                                <rect key="frame" x="24" y="297" width="250" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Objective-C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tagButtonPressed:" destination="baw-rS-R37" eventType="touchUpInside" id="atT-gE-MEE"/>
+                                    <segue destination="7X7-Xx-Hcj" kind="push" id="pkY-5x-rhO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press button to get questions tagged with  Objective-C" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ou-8p-6a7">
+                                <rect key="frame" x="8" y="195" width="317" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="so-logo.png" id="SqD-g0-kPe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tag" image="tags.png" id="Njw-39-Fgy"/>
+                    <navigationItem key="navigationItem" id="PXS-Dl-Wqy"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNj-bL-kjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7201" y="-3123"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ttY-kE-OBa">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="jdK-hR-BOQ" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Qmo-Zx-8wa">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Cyb-MI-Tzd" kind="relationship" relationship="viewControllers" id="7Bw-6K-Idj"/>
+                        <segue destination="GcP-zK-m4n" kind="relationship" relationship="viewControllers" id="m14-ha-uDw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBH-Y9-aWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8362" y="-2823"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Yb9-ey-YGy">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="GcP-zK-m4n" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="YQG-dL-zpR"/>
+                    <navigationItem key="navigationItem" id="b8Y-Hq-KLM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tkt-H5-TM7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="baw-rS-R37" kind="relationship" relationship="rootViewController" id="R2J-nJ-wzG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGN-Tw-LQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7670" y="-3105"/>
+        </scene>
+        <!--Questions View Controller-->
+        <scene sceneID="yfs-dI-206">
+            <objects>
+                <viewController storyboardIdentifier="kQuestionStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7X7-Xx-Hcj" customClass="STOQuestionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K9p-Nx-KT1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RNQ-35-bOz">
+                                <rect key="frame" x="56" y="212" width="183" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5yh-d4-Il1">
+                                <rect key="frame" x="2" y="1" width="315" height="497"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="titleCellID" id="j9R-Oo-WmO">
+                                        <rect key="frame" x="0.0" y="22" width="315" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j9R-Oo-WmO" id="Ln9-Qs-NKQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="282" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="50" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Re0-w9-fIl">
+                                                    <rect key="frame" x="7" y="11" width="295" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7X7-Xx-Hcj" id="b5u-hx-ube"/>
+                                    <outlet property="delegate" destination="7X7-Xx-Hcj" id="mXt-2R-NYH"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nbc-Da-595">
+                                <rect key="frame" x="12" y="491" width="268" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Tap to load more">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapToLoadMore:forEvent:" destination="7X7-Xx-Hcj" eventType="touchUpInside" id="R2K-Zt-U7F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ViC-OY-ufl"/>
+                    <connections>
+                        <outlet property="myTableView" destination="5yh-d4-Il1" id="ncV-SO-f55"/>
+                        <segue destination="w1g-PR-xm1" kind="push" identifier="ShowQuestionDetails" id="lbx-fB-aKP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiJ-9w-4ik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6715" y="-3131"/>
+        </scene>
+        <!--Questions Details View Controller-->
+        <scene sceneID="Slo-bi-Fbe">
+            <objects>
+                <viewController storyboardIdentifier="questionDetailsID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w1g-PR-xm1" customClass="STOQuestionsDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EQq-Yh-HU6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Y2x-db-RNj">
+                                <rect key="frame" x="0.0" y="27" width="320" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0bI-sd-csa">
+                                <rect key="frame" x="10" y="0.0" width="191" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sZa-hn-jf1">
+                                <rect key="frame" x="0.0" y="208" width="320" height="352"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="answerCellID" id="z6H-3K-NxR">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z6H-3K-NxR" id="Wvh-WI-jed">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="w1g-PR-xm1" id="DpD-jb-gZm"/>
+                                    <outlet property="delegate" destination="w1g-PR-xm1" id="jYy-IF-Efp"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dez-yK-Z6F">
+                                <rect key="frame" x="5" y="183" width="191" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Neq-sM-NpX"/>
+                    <connections>
+                        <outlet property="myTableView" destination="sZa-hn-jf1" id="5fM-zd-EMb"/>
+                        <outlet property="textWebView" destination="Y2x-db-RNj" id="44i-W0-U50"/>
+                        <segue destination="yiA-4i-ZFm" kind="push" identifier="answerDetailID" id="O62-fi-Sap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBx-7f-y9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6234" y="-3123"/>
+        </scene>
+        <!--Answer Detail View Controller-->
+        <scene sceneID="TmU-i9-ABc">
+            <objects>
+                <viewController storyboardIdentifier="answerDetailStryID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yiA-4i-ZFm" customClass="STOAnswerDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EjC-gB-XRv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="oM9-9p-UVS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YUa-D3-spH"/>
+                    <connections>
+                        <outlet property="textWebView" destination="oM9-9p-UVS" id="SHI-jx-q2r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHS-Xa-c4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5699" y="-3118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="34.png" width="16" height="16"/>
+        <image name="so-logo.png" width="1000" height="298"/>
+        <image name="tags.png" width="24" height="25"/>
+    </resources>
+</document>
